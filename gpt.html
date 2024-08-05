@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    form {
+        margin-top: 100px;
+        border-radius: 10px;
+        padding: 20px 20px 8px 20px;
+        width: 350px;
+        box-shadow: 10px 10px 10px 10px rgb(181, 181, 181);
+        overflow: hidden;
+        
+    }
+
+    input {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    form select {
+        margin-bottom: 10px;
+    }
+
+    #checkbox,
+    #radio,
+    #radio1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 7px;
+    }
+
+    #checkbox label,
+    #radio label,
+    #radio1 label {
+
+        margin-right: 40px;
+    }
+
+    #img h2 {
+        position: absolute;
+        top: 120px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <form>
+        <div id="img">
+            <img src="image/beach.jpg" alt="beach" height="100px" width="350px">
+            <h2>Reserve Your Stay</h2>
+        </div>
+        <label for="fname">Name</label><br>
+        <div>
+            <input type="text" name="username" id="fname" style="width: 340px; height: 20px">
+        </div>
+
+        <label for="email">Email</label><br>
+        <div>
+            <input type="email" name="email" id="email" style="width: 340px; height: 20px;">
+        </div>
+        <label for=" Phone Number"> Phone Number</label><br>
+
+        <div>
+            <input type="tel" name="phoneno" id=" Phone Number" style="width:  340px; height: 20px;">
+        </div>
+
+        <label for="Number of Guest">Number of Guest</label><br>
+        <div>
+            <input type="number" name="num" max="10" min="5" id="Number of Guest" style="width:  340px; height: 20px;">
+        </div>
+        <label for=" Check-in Date"> Check-in Date</label><br>
+        <div>
+            <input type="date" name="checking-in date" id=" Check-in Date" style="width:  340px; height: 20px;">
+        </div>
+        <label for="  Check-out Dates"> Check-out Dates</label><br>
+        <div>
+            <input type="date" name="Check-out" id=" Check-out Dates" style="width:  340px; height: 20px;">
+        </div>
+        <label for="Room type"> Room type</label><br>
+
+        <div>
+            <select name="Room type" id="  Room type" style="width:  345px; height: 20px;">
+                <option value="Ac">Ac</option>
+                <option value="Non Ac">Non Ac</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <label for="check">Extras</label>
+        <div id="checkbox">
+            <input type="checkbox" id="check" name="Extras" value="Breakfast">
+            <label for="check"> Breakfast</label><br>
+            <input type="checkbox" id="check" name="Extras" value="Wifi">
+            <label for="check"> Wifi</label><br>
+            <input type="checkbox" id="check" name="Extras" value="parking">
+            <label for="check"> Parking</label><br>
+        </div>
+        <label for="choose any one">Payment Option</label>
+        <div id="radio">
+            <input type="radio" id="choose any one" name="amount" value="credi card">
+            <label for="choose any one">creditcard</label><br>
+            <input type="radio" id="choose any one" name="amount" value="cash">
+            <label for="choose any one">cash</label><br>
+            <input type="radio" id="choose any one" name="amount" value="paypall">
+            <label for="choose any one">paypall</label>
+        </div>
+        <label for="choose any one">Preferedview</label>
+        <div id="radio1">
+            <input type="radio" id="Preferedview" name="view" value="Ocean View">
+            <label for="Preferedview">Ocean View</label><br>
+            <input type="radio" id="Preferedview" name="view" value="Mountain View">
+            <label for="Preferedview">Mountain View</label><br>
+            <input type="radio" id="Preferedview" name="view" value="City View">
+            <label for="Preferedview">City View</label>
+        </div>
+
+        <div><input type="submit" value="Submit"
+                style="color: white; background-color: orangered;"></div>
+    </form>
+</body>
+
+</html>
